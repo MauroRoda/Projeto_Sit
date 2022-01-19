@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+#cabecalho{
+    background-color: white;
+    height: 300px;
+    background-image: url(./imagens/inicio/logo_grande.JPG);
+    
+}
+
+#menus_superior{
+    list-style: none;
+    background-color: rgb(44, 43, 43);
+    height: 38px;
+}
+
+/*Alterar a caracteristica dos itens da lista (os menus)*/
+#menus_superior li{
+    /*deixar tudo lado a lado*/
+    display: inline;
+    
+   
+}
+
+
+#menus_superior li a{
+    /*cor das letras do menu*/
+    color: white;
+    /*tamanho da fonte*/
+    font-size: 14px;
+    /*retira toda decoração do texto*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .6s ;
+}
+
+#menus_superior li a:hover{
+    background-color: yellow;
+    color: #444343;
+
+}
