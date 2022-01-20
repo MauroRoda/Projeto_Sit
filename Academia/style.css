@@ -6,23 +6,40 @@
 body{
     font-size: Arial, Helvetica, sans-serif;
     background-color: black;
+    
 }
 
-#cabecalho{
-    background-color: white;
-    height: 300px;
-    background-image: url(./imagens/inicio/logo_grande.JPG);
+.cabecalho{
     
+    background-color: rgb(248, 248, 248);
+    height: 316px;
+    
+}
+
+/*configuração imagem logo principal*/
+#logo{
+    height: 280px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+/*configuração imagem "Free Pass"*/
+#free{
+    margin-right: 10px;
+    width: 210px;
+    height: 150px;
 }
 
 #menus_superior{
     list-style: none;
     background-color: rgb(44, 43, 43);
     height: 38px;
+    text-align: center;
+    
 }
 
 /*Alterar a caracteristica dos itens da lista (os menus)*/
-#menus_superior li{
+#menus_superior div ul li{
     /*deixar tudo lado a lado*/
     display: inline;
     
@@ -30,7 +47,9 @@ body{
 }
 
 
-#menus_superior li a{
+#menus_superior div li a{
+    
+    width: 100px;
     /*cor das letras do menu*/
     color: white;
     /*tamanho da fonte*/
@@ -42,7 +61,7 @@ body{
     transition: background .6s ;
 }
 
-#menus_superior li a:hover{
+#menus_superior div li a:hover{
     background-color: yellow;
     color: #444343;
 
