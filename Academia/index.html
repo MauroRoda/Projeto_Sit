@@ -1,32 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>SIT-CLONE = Academia life energi</title>
-        <meta charset="UTF=8">
-        <link href="style.css" rel="stylesheet">
-    </head>
-
-    <body> 
-        <div class="cabecalho">
-            <img id="logo" src="./imagens/inicio/logo_grande.JPG" alt="logo grande">
-            <img id="free" src="./imagens/inicio/free_pass.JPG" alt="passe livre"
-        </div>
-       
-        <nav id="menus_superior">  
-            <div >
-                <ul >
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">UNIDADES</a></li>
-                    <li><a href="#">GALERIA</a></li>
-                    <li><a href="#">EVENTOS</a></li>
-                    <li><a href="#">HORÁRIOS</a></li>
-                    <li><a href="#">MODALIDADES</a></li>
-                    <li><a href="#">PLANOS</a></li>
-                    <li><a href="#">CONTATO</a></li>
-                </ul>
-            </div>
+                    <html lang="pt-BR">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <!-- Metadado de descrição para aparecer na pesquisa do google-->
+                        <meta name="description" content="Um bot que ra moderar e deixar sua comunidade segura">
+                        <title>Academia</title>
+                        <title>Balle Bot - Modele sua comuidade no Discord</title>
+                        <link rel="stylesheet" type="text/css" href="./style.css">
+                    </head>
+                    
+                    <!-- Primeiramente divida as seçoes do codigo, header/cabecalho, main/principal, footer/rodapé-->
+                    
+    <body>
+<!-- ####### 1° divisão HEADER/cabeçalho ###############################################################################-->
+    <header class="cabecalho">
+        <!-- Subdivida o cabeçalho, na imagem/Logo e o menu-->
+                        <div class="imagem_cabecalho">
+                            <!--Imagem da logo-->
+                            <img class="imagem_cabecalho" src="./imagens/inicio/logo_grande.JPG" alt="logo">
+                        </div> 
+                        
+                        <div class="free-pass>
+                            <div class="menu_cabecalho-free-pass">
+                            <!--Menu acima do free-pass 
+                            Colocar placehouder para aparecer uma mensagem no campo-->
+                            
+                                <input class="menu_cabecalho-free-pass" type="text" name="Nome" placeholder="Nome: *">
+                                <input class="menu_cabecalho-free-pass" type="text" name="E-mail" placeholder="Seu MELHOR E-mail: *">
+                                <input class="menu_cabecalho-free-pass" type="text" name="Telefone" placeholder="Telefone">
+                            
+                                <div class="div-botao-enviar" >
+                                    <button class="botao-enviar">Enviar</button>
+                                </div>
+                                <!--Imagem da free-pass-->
+                                <img class="imagem_cabecalho-free-pass" src="./imagens/inicio/free_pass.JPG" alt="logo">
+                                
+                                
+                        </div>
+            
+    </header> 
+                   
+<!-- ###### 2° divisão Main/corpo #####################################################################################-->
+         <!--Menu-->
+         <nav class="cabecalho_menu">
+            <!--Links do menu, ancora-->
+            <a class="cabecalho_menu_item">INICIO</a>
+            <a class="cabecalho_menu_item">UNIDADES</a>
+            <a class="cabecalho_menu_item">GALERIA</a>
+            <a class="cabecalho_menu_item">EVENTOS</a>
+            <a class="cabecalho_menu_item">HORÁRIOS</a>
+            <a class="cabecalho_menu_item">MODALIDADES</a>
+            <a class="cabecalho_menu_item">PLANOS</a>
+            <a class="cabecalho_menu_item">CONTATO</a>
         </nav>
-        
+
+        <main class="conteudo">
+                            <!-- 1° Cessão do corpo, subdivida conforme a necessidade-->
+            <section class="conteudo_principal">
+                    
+                <!-- A div nesse caso vai separar o conteudo da cessao, nesse caso texto, botão e imagem-->
+                        <div class="conteudo_principal_escrito">
+                                
+                        </div>
+                    
+                        <img>
+            </section>
+                                
+            <section class="conteudo_secundario">
+                            
+            </section>
+        </main>
+                    
+<!-- ############# 3° divisão footer/rodapé ############################################################################-->
+        <footer class="rodape">
+            <!-- nesse rodapé colocaremos apenas uma imagem -->
+            <img>
+
+        </footer>
+                    
+               
     </body>
-   
-</html>
+</html>                        

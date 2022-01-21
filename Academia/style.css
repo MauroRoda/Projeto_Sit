@@ -1,68 +1,84 @@
+
+/*Resetando todas as configurações do Html que possa vir para o css*/
 *{
+    /* retira todas as margens da tela*/
     margin: 0;
+    /*retira todas os espacametos da borda até o conteudo*/
     padding: 0;
+    
+    box-sizing: border-box;
+    /*retira qualquer decoração do texto vindo do html*/
+    text-decoration: none;
 }
 
 body{
-    font-size: Arial, Helvetica, sans-serif;
-    background-color: black;
+    font-size: 100%;
+    background-color: rgb(240, 240, 240);
     
 }
 
 .cabecalho{
+    display: flex;
+    /*definir a direção dos itens*/
+    flex-direction: row;
     
-    background-color: rgb(248, 248, 248);
-    height: 316px;
-    
+    /*espaçamento dos itens mais de fora*/
+    align-items: center;
+    /*tipo de espaçamento*/
+    padding: 20px;
+    justify-content: space-around;
 }
 
-/*configuração imagem logo principal*/
-#logo{
-    height: 280px;
-    margin-left: 200px;
-    margin-right: 100px;
-}
+.menu_cabecalho-free-pass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 100;
 
-/*configuração imagem "Free Pass"*/
-#free{
-    margin-right: 10px;
-    width: 210px;
-    height: 150px;
-}
-
-#menus_superior{
-    list-style: none;
-    background-color: rgb(44, 43, 43);
-    height: 38px;
-    text-align: center;
-    
-}
-
-/*Alterar a caracteristica dos itens da lista (os menus)*/
-#menus_superior div ul li{
-    /*deixar tudo lado a lado*/
-    display: inline;
-    
-   
 }
 
 
-#menus_superior div li a{
+
+.imagem_cabecalho-free-pass{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.div-botao-enviar{
+    width: 255px
+}
+
+.botao-enviar{
+    background-color: rgb(216, 216, 59);
     
-    width: 100px;
-    /*cor das letras do menu*/
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    border: none;
+}
+
+/* Configurações do MENU ####################*/
+.cabecalho_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    height: 35px;
+       
+}
+
+.cabecalho_menu_item{
     color: white;
-    /*tamanho da fonte*/
-    font-size: 14px;
-    /*retira toda decoração do texto*/
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    transition: background .6s ;
-}
-
-#menus_superior div li a:hover{
-    background-color: yellow;
-    color: #444343;
+    padding-left: 50px;
+    
 
 }
